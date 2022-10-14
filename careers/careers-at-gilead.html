@@ -1,0 +1,1621 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+
+<!-- Mirrored from www.gilead.com/careers/careers-at-gilead by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Oct 2022 19:28:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    
+
+    
+    
+
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script type="text/javascript" src="../../cdn.cookielaw.org/consent/ca7369fb-0f82-4ffa-90d3-0694f620d948/OtAutoBlock.js"></script>
+    <script src="../../cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="ca7369fb-0f82-4ffa-90d3-0694f620d948"></script>
+    <script type="text/javascript">
+    function OptanonWrapper() {  // Get initial OnetrustActiveGroups ids
+        if(typeof OptanonWrapperCount == "undefined"){
+            otGetInitialGrps();
+        }
+     
+        //Delete cookies
+        otDeleteCookie(otIniGrps);
+     
+        // Assign OnetrustActiveGroups to custom variable
+        function otGetInitialGrps(){
+            OptanonWrapperCount = '';
+            otIniGrps =  OnetrustActiveGroups;
+            // console.log("otGetInitialGrps", otIniGrps)
+        }
+     
+        function otDeleteCookie(iniOptGrpId)
+        {
+            var otDomainGrps = JSON.parse(JSON.stringify(Optanon.GetDomainData().Groups));
+            var otDeletedGrpIds = otGetInactiveId(iniOptGrpId, OnetrustActiveGroups);
+            if(otDeletedGrpIds.length != 0 && otDomainGrps.length !=0){
+                for(var i=0; i < otDomainGrps.length; i++){
+                    //Check if CustomGroupId matches
+                   if(otDomainGrps[i]['CustomGroupId'] != '' && otDeletedGrpIds.includes(otDomainGrps[i]['CustomGroupId'])){
+                        for(var j=0; j < otDomainGrps[i]['Cookies'].length; j++){
+                            // console.log("otDeleteCookie",otDomainGrps[i]['Cookies'][j]['Name'])
+                            //Delete cookie
+                            eraseCookie(otDomainGrps[i]['Cookies'][j]['Name']);
+                        }
+                    }
+     
+                    //Check if Hostid matches
+                    if(otDomainGrps[i]['Hosts'].length != 0){
+                        for(var j=0; j < otDomainGrps[i]['Hosts'].length; j++){
+                            //Check if HostId presents in the deleted list and cookie array is not blank
+                            if(otDeletedGrpIds.includes(otDomainGrps[i]['Hosts'][j]['HostId']) && otDomainGrps[i]['Hosts'][j]['Cookies'].length !=0){
+                                for(var k=0; k < otDomainGrps[i]['Hosts'][j]['Cookies'].length; k++){
+                                    //Delete cookie
+                                    eraseCookie(otDomainGrps[i]['Hosts'][j]['Cookies'][k]['Name']);
+                                }
+                            }
+                        }
+                    }
+     
+                }
+            }
+            otGetInitialGrps(); //Reassign new group ids
+        }
+     
+        //Get inactive ids
+        function otGetInactiveId(customIniId, otActiveGrp){
+            //Initial OnetrustActiveGroups
+            // console.log("otGetInactiveId",customIniId)
+            customIniId = customIniId.split(",");
+            customIniId = customIniId.filter(Boolean);
+     
+            //After action OnetrustActiveGroups
+            otActiveGrp = otActiveGrp.split(",");
+            otActiveGrp = otActiveGrp.filter(Boolean);
+     
+            var result=[];
+            for (var i=0; i < customIniId.length; i++){
+                if ( otActiveGrp.indexOf(customIniId[i]) <= -1 ){
+                    result.push(customIniId[i]);
+                }
+            }
+            return result;
+        }
+     
+        //Delete cookie
+        function eraseCookie(name) {
+            //Delete root path cookies
+            domainName = window.location.hostname;
+            document.cookie = name+'=; Max-Age=-99999999; Path=/;Domain='+ domainName;
+            document.cookie = name+'=; Max-Age=-99999999; Path=/;';
+     
+            //Delete LSO incase LSO being used, cna be commented out.
+            localStorage.removeItem(name);
+     
+            //Check for the current path of the page
+            pathArray = window.location.pathname.split('../index.html');
+            //Loop through path hierarchy and delete potential cookies at each path.
+            for (var i=0; i < pathArray.length; i++){
+                if (pathArray[i]){
+                    //Build the path string from the Path Array e.g /site/login
+                    var currentPath = pathArray.slice(0,i+1).join('../index.html');
+                   document.cookie = name+'=; Max-Age=-99999999; Path=' + currentPath + ';Domain='+ domainName;
+                    document.cookie = name+'=; Max-Age=-99999999; Path=' + currentPath + ';';
+                    //Maybe path has a trailing slash!
+                    document.cookie = name+'=; Max-Age=-99999999; Path=' + currentPath + '/;Domain='+ domainName;
+                    document.cookie = name+'=; Max-Age=-99999999; Path=' + currentPath + '/;';
+     
+                    
+                }
+            }
+     
+        }
+    }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+    
+    
+
+
+        <!-- Google Tag Manager -->
+        <script type="text/plain" class="optanon-category-C0002">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TZLH92');</script>
+        <!-- End Google Tag Manager -->
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+    <meta name="format-detection" content="telephone=no">
+
+    
+    <link href="../Areas/GileadCorporate/Content/dist/main.mina388.css?v=20221006014303" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
+    <!-- Load fonts from Typekit -->
+    <link rel="stylesheet" href="../../use.typekit.net/iad1gkg.css">
+
+    
+
+    
+    <script>
+
+var isExperienceEditor = false;
+var isPreviewMode = false;    </script>
+    
+    
+
+
+        <title>Careers at Gilead</title>
+        <meta name="description" content="Gilead is committed to creating a healthier world for all people. Learn about opportunities to join our team, including full-time jobs, internships and more." />
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:title" content="Careers at Gilead" />
+        <meta property="og:description" content="Gilead is committed to creating a healthier world for all people. Learn about opportunities to join our team, including full-time jobs, internships and more." />
+
+
+    
+    <link href="../-/media/gilead-corporate/images/Favicon_180.png" rel="apple-touch-icon"  sizes="180x180">
+<link href="../-/media/gilead-corporate/images/Favicon_16.png" rel="icon" type="image/png" sizes="16x16">
+<link href="../-/media/gilead-corporate/images/Favicon_32.png" rel="icon" type="image/png" sizes="32x32">
+
+
+
+        <meta property="og:image" content="https://wwwea10.gilead.com/-/media/gilead-corporate/images/og/gilead_logo.jpg"/>
+
+</head>
+
+<body class=" body_careers_at_gilead ">
+    
+    
+
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZLH92"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+    
+    <header>
+        
+    
+
+        <noscript class="noJS">Sorry, your browser does not support JavaScript!</noscript>
+
+
+
+
+
+
+
+
+    <div class="row d-none d-lg-flex master-head" data-action="masterHeadComponent">
+        <div class="col-md-2 d-flex align-items-center">
+            
+            <a class="navbar-brand" href="../index.html">
+                <img src="../-/media/gilead-corporate/images/global/gilead-create-possible-svg089f.svg?iar=0&amp;hash=4A8C3B35AEA709965805BF3C2AF58FD6" class="img-fluid header-logo d-block" alt="Gilead Sciences, Inc business logo" />
+            </a>
+        </div>
+        <div class="col">
+
+            <div class="d-flex flex-row justify-content-end" >
+
+
+
+
+                            <div class="master-head-link">
+                                <a target="_blank" href="https://www.askgileadmedical.com/" class="nav-link ">Medicine Questions</a>
+                            </div>
+                            <div class="master-head-link">
+                                <a target="" href="../utility/contact/report-an-adverse-event.html" class="nav-link ">Report an Adverse Event</a>
+                            </div>
+                            <div class="master-head-link">
+                                <a target="_blank" href="https://investors.gilead.com/" class="nav-link ">Investors</a>
+                            </div>
+                            <div class="master-head-link">
+                                <a target="" href="../utility/contact.html" class="nav-link ">Contact</a>
+                            </div>
+
+                <div class="master-head-link">
+                    
+                    <div class="dropdown">
+                        <a class="nav-link global-op-toggle" id="navDropdown00" aria-haspopup="true" aria-expanded="false">
+                            Global Operations
+                            <i class="chevron m-auto"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Global Operations Dropdown -->
+        <div class="dropdown-menu global-ops-content" aria-labelledby="navDropdown00" aria-haspopup="true">
+            <div class="d-flex m-auto">
+                <div class="col">
+                            <span id="continent-northamerica">North America</span>
+            <ul aria-labelledby="continent-northamerica">
+                    <li><a href="https://www.gilead.ca/">Canada</a></li>
+                    <li><a href="../utility/global-operations/north-america/mexico.html">Mexico</a></li>
+                    <li><a href="../about/us-locations.html">USA</a></li>
+            </ul>
+        <span id="continent-southamerica">South America</span>
+            <ul aria-labelledby="continent-southamerica">
+                    <li><a href="../utility/global-operations/south-america/argentina.html">Argentina</a></li>
+                    <li><a href="../utility/global-operations/south-america/brazil.html">Brazil</a></li>
+            </ul>
+
+                </div>
+                <div class="col">
+                            <span id="continent-asia">Asia</span>
+            <ul aria-labelledby="continent-asia">
+                    <li><a href="https://www.gileadchina.cn/">China Mainland</a></li>
+                    <li><a href="../utility/global-operations/asia/hong-kong.html">Hong Kong</a></li>
+                    <li><a href="../utility/global-operations/asia/india.html">India</a></li>
+                    <li><a href="https://www.gilead.co.jp/">Japan</a></li>
+                    <li><a href="https://www.gilead.co.kr/">Korea</a></li>
+                    <li><a href="../utility/global-operations/asia/singapore.html">Singapore</a></li>
+                    <li><a href="../utility/global-operations/asia/taiwan.html">Taiwan</a></li>
+            </ul>
+
+                </div>
+                <div class="col">
+                            <span id="continent-middleeast">Middle East</span>
+            <ul aria-labelledby="continent-middleeast">
+                    <li><a href="../utility/global-operations/middle-east/saudi-arabia.html">Saudi Arabia</a></li>
+                    <li><a href="https://www.gileadisrael.co.il/">Israel</a></li>
+                    <li><a href="../utility/global-operations/middle-east/turkey.html">Turkey</a></li>
+                    <li><a href="../utility/global-operations/middle-east/united-arab-emirates.html">United Arab Emirates</a></li>
+            </ul>
+        <span id="continent-africa">Africa</span>
+            <ul aria-labelledby="continent-africa">
+                    <li><a href="../utility/global-operations/africa/south-africa.html">South Africa</a></li>
+            </ul>
+        <span id="continent-australia">Australia</span>
+            <ul aria-labelledby="continent-australia">
+                    <li><a href="https://www.gilead.com.au/">Australia and New Zealand</a></li>
+            </ul>
+
+                </div>
+                <div class="col">
+                            <span id="continent-europe">Europe</span>
+            <div class="d-flex">
+                <ul aria-labelledby="continent-europe">
+                        <li><a href="../utility/global-operations/europe/austria.html">Austria</a></li>
+                        <li><a href="../utility/global-operations/europe/belgium-luxembourg.html">Belgium Luxembourg</a></li>
+                        <li><a href="../utility/global-operations/europe/czech-republic-and-slovakia.html">Czech Republic &amp; Slovakia</a></li>
+                        <li><a href="../utility/global-operations/europe/denmark.html">Denmark</a></li>
+                        <li><a href="../utility/global-operations/europe/finland.html">Finland</a></li>
+                        <li><a href="https://www.gilead.fr/">France</a></li>
+                        <li><a href="https://www.gileadsciences.de/">Germany</a></li>
+                        <li><a href="../utility/global-operations/europe/greece.html">Greece</a></li>
+                        <li><a href="../utility/global-operations/europe/iceland.html">Iceland</a></li>
+                        <li><a href="../utility/global-operations/europe/ireland.html">Ireland</a></li>
+                </ul>
+
+                <ul aria-labelledby="continent-europe">
+                        <li><a href="https://www.gilead.it/">Italy</a></li>
+                        <li><a href="../utility/global-operations/europe/netherlands.html">Netherlands</a></li>
+                        <li><a href="../utility/global-operations/europe/norway.html">Norway</a></li>
+                        <li><a href="../utility/global-operations/europe/poland.html">Poland &amp; The Baltics</a></li>
+                        <li><a href="../utility/global-operations/europe/portugal.html">Portugal</a></li>
+                        <li><a href="../utility/global-operations/europe/russia.html">Russia</a></li>
+                        <li><a href="https://www.gilead.es/">Spain</a></li>
+                        <li><a href="../utility/global-operations/europe/sweden.html">Sweden</a></li>
+                        <li><a href="../utility/global-operations/europe/switzerland.html">Switzerland</a></li>
+                        <li><a href="https://www.gilead.co.uk/">United Kingdom</a></li>
+                </ul>
+            </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="row w-100 m-menu-0 navbar-header-wrapper">
+
+        <div class="col p-menu-0">
+            <nav class="navbar-header d-flex" data-action="menuComponent">
+
+                
+                <div class="gilead-navbar-bg d-block"></div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="gilead-collapse"
+                        data-target="#GileadHeaderNavbar" aria-controls="GileadHeaderNavbar"
+                        data-action="gileadCollapseComponent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="label m-auto"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+                
+                <a class="navbar-brand d-block d-lg-none"
+                   href="../index.html">
+                    <img src="../-/media/gilead-corporate/images/global/gilead-create-possible-svg.svg" alt="Gilead Logo" width="0"
+                         height="0" class="header-logo d-block">
+                </a>
+
+                <form action="https://www.gilead.com/careers/careers-at-gilead" class="form-search my-2 my-lg-0 d-block d-lg-none" method="post" role="search">                    <a class="search-icon search-icon-button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="magnifying-glass align-middle"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSearch">
+                        <div class="input-group">
+                            <input name="__RequestVerificationToken" type="hidden" value="b5AqZMbjBO_A4YW3u7-sVfp6uPFZHbjVm5p8qCrjAScoT3uwdChujBof1iWH5T8mbIYWbh_Ci5al1PdoOzhI_EIylELExreyp4bGar9ekPA1" />
+                            <input id="scController" name="scController" type="hidden" value="Search" /><input id="scAction" name="scAction" type="hidden" value="SubmitSearch" />
+                            <input class="form-control py-2 border-right-0 border" type="search" value="" placeholder="Search" name="searchTerm" id="searchTerm" aria-label="search text">
+                            <div class="input-group-append">
+                                <div class="input-group-text bg-white">
+                                    <button class="magnifying-glass red" aria-label="search"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</form>                
+
+                
+                <section id="GileadHeaderNavbar"
+                         class="gilead-collapse ">
+                    <ul class="navbar-nav mr-auto main-nav">
+
+    <li class="nav-item dropdown text-lg-center ">
+        <a href="#" class="nav-link  nav-dropdown-toggle " id="navDropdown1"
+           role="button" data-toggle="gilead-dropdown"
+           data-action="gileadDropdownComponent" aria-haspopup="true"
+           aria-expanded="false">
+
+            <span>
+                Our Purpose
+                <i class="chevron d-lg-block d-xl-block m-auto"></i>
+            </span>
+            <i class="rounded-circle m-auto toggle-dropdown-circle"></i>
+        </a>
+            <div class="dropdown-menu border-0 m-0 p-0"
+                 aria-labelledby="navDropdown1" aria-haspopup="true">
+                    <a href="../purpose/mission-and-core-values.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Mission and Core Values</a>
+                    <a href="../purpose/partnerships-and-community.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown12Inner aria-expanded="false">Partnerships and Community</a>
+                    <a href="../purpose/inclusion-and-diversity.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Inclusion and Diversity</a>
+                    <a href="../purpose/giving.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown14Inner aria-expanded="false">Corporate Giving</a>
+                    <a href="../purpose/gilead-foundation.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown15Inner aria-expanded="false">Gilead Foundation</a>
+                    <a href="../purpose/sustainability.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown16Inner aria-expanded="false">Sustainability</a>
+                    <a href="../purpose/advancing-global-health.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown17Inner aria-expanded="false">Advancing Global Health</a>
+                    <a href="../purpose/medication-access.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown18Inner aria-expanded="false">Medication Access</a>
+            </div>
+    </li>
+    <li class="nav-item dropdown text-lg-center ">
+        <a href="#" class="nav-link  nav-dropdown-toggle " id="navDropdown2"
+           role="button" data-toggle="gilead-dropdown"
+           data-action="gileadDropdownComponent" aria-haspopup="true"
+           aria-expanded="false">
+
+            <span>
+                About
+                <i class="chevron d-lg-block d-xl-block m-auto"></i>
+            </span>
+            <i class="rounded-circle m-auto toggle-dropdown-circle"></i>
+        </a>
+            <div class="dropdown-menu border-0 m-0 p-0"
+                 aria-labelledby="navDropdown2" aria-haspopup="true">
+                    <a href="../about/leadership.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Leadership</a>
+                    <a href="../about/us-locations.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">U.S. Locations</a>
+                    <a href="../about/how-we-operate.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown23Inner aria-expanded="false">How We Operate</a>
+                    <a href="../about/ethics-and-code-of-conduct.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown24Inner aria-expanded="false">Ethics and Code of Conduct</a>
+            </div>
+    </li>
+    <li class="nav-item dropdown text-lg-center ">
+        <a href="#" class="nav-link  nav-dropdown-toggle " id="navDropdown3"
+           role="button" data-toggle="gilead-dropdown"
+           data-action="gileadDropdownComponent" aria-haspopup="true"
+           aria-expanded="false">
+
+            <span>
+                Science &amp; Medicine
+                <i class="chevron d-lg-block d-xl-block m-auto"></i>
+            </span>
+            <i class="rounded-circle m-auto toggle-dropdown-circle"></i>
+        </a>
+            <div class="dropdown-menu border-0 m-0 p-0"
+                 aria-labelledby="navDropdown3" aria-haspopup="true">
+                    <a href="../science-and-medicine/medicines.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Medicines</a>
+                    <a href="../science-and-medicine/pipeline.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Pipeline</a>
+                    <a href="../science-and-medicine/research.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown33Inner aria-expanded="false">Research</a>
+                    <a href="https://www.gileadclinicaltrials.com/" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Clinical Trials</a>
+            </div>
+    </li>
+    <li class="nav-item dropdown text-lg-center ">
+        <a href="#" class="nav-link  nav-dropdown-toggle " id="navDropdown4"
+           role="button" data-toggle="gilead-dropdown"
+           data-action="gileadDropdownComponent" aria-haspopup="true"
+           aria-expanded="false">
+
+            <span>
+                News and Press
+                <i class="chevron d-lg-block d-xl-block m-auto"></i>
+            </span>
+            <i class="rounded-circle m-auto toggle-dropdown-circle"></i>
+        </a>
+            <div class="dropdown-menu border-0 m-0 p-0"
+                 aria-labelledby="navDropdown4" aria-haspopup="true">
+                    <a href="https://investors.gilead.com/events" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Events</a>
+                    <a href="https://stories.gilead.com/" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Stories</a>
+                    <a href="../news-and-press/press-room.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown43Inner aria-expanded="false">Newsroom</a>
+                    <a href="../news-and-press/company-statements.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown44Inner aria-expanded="false">Company Statements</a>
+                    <a href="../news-and-press/annual-report.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown45Inner aria-expanded="false">Annual Reports</a>
+            </div>
+    </li>
+    <li class="nav-item dropdown text-lg-center ">
+        <a href="#" class="nav-link  nav-dropdown-toggle last" id="navDropdown5"
+           role="button" data-toggle="gilead-dropdown"
+           data-action="gileadDropdownComponent" aria-haspopup="true"
+           aria-expanded="false">
+
+            <span>
+                Careers
+                <i class="chevron d-lg-block d-xl-block m-auto"></i>
+            </span>
+            <i class="rounded-circle m-auto toggle-dropdown-circle"></i>
+        </a>
+            <div class="dropdown-menu border-0 m-0 p-0"
+                 aria-labelledby="navDropdown5" aria-haspopup="true">
+                    <a href="careers-at-gilead.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Careers at Gilead</a>
+                    <a href="our-culture.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Our Culture</a>
+                    <a href="meet-our-employees.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Meet Our Employees</a>
+                    <a href="inclusion-and-diversity-in-hiring.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Inclusion and Diversity in Hiring</a>
+                    <a href="compensation-benefits-and-wellbeing.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Compensation, Benefits and Wellbeing</a>
+                    <a href="our-global-footprint.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Our Global Footprint</a>
+                    <a href="early-career-opportunities.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Early Career Opportunities</a>
+                    <a href="postdoctoral-fellowships.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Postdoctoral Fellowships</a>
+                    <a href="https://gilead.yello.co/external/events_central" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Hiring Events</a>
+                    <a href="https://gilead.yello.co/external/form/24a8oU4jF5UL3CKq7lO_Cg" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Talent Community Sign-up</a>
+            </div>
+    </li>
+
+                        
+                            <li class="nav-item dropdown text-lg-center d-lg-none">
+        <a href="#" class="nav-link  nav-dropdown-toggle " id="utility-nav"
+           role="button" data-toggle="gilead-dropdown"
+           data-action="gileadDropdownComponent" aria-haspopup="true"
+           aria-expanded="false">
+
+            <span>
+                Utility
+                <i class="chevron d-lg-block d-xl-block m-auto"></i>
+            </span>
+            <i class="rounded-circle m-auto toggle-dropdown-circle"></i>
+        </a>
+            <div class="dropdown-menu border-0 m-0 p-0"
+                 aria-labelledby="utility-nav" aria-haspopup="true">
+                    <a href="../privacy-statements.html" class="nav-dropdown-toggle-inner avoid-interstitial" data-toggle=dropdownInner data-target=navDropdown61Inner aria-expanded="false">Privacy Statements</a>
+                    <a href="../terms-of-use.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Terms Of Use</a>
+                    <a href="../social-media-guidelines.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Social Media Guidelines</a>
+                    <a href="../eu-data-disclosure.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">EU Data Disclosure</a>
+                    <a href="../sitemap.html" class="nav-dropdown-toggle-inner avoid-interstitial"  aria-expanded="false">Sitemap</a>
+            </div>
+    </li>
+
+
+                    </ul>
+                    
+
+
+                    
+                        <div class="dropdown-menu-inner" id="navDropdown12Inner"
+                             aria-labelledby="navDropdown12Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../purpose/partnerships-and-community.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Partnerships and Community
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/partnerships-and-community/compass.html">
+                                    COMPASS Initiative
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/partnerships-and-community/hepconnect.html">
+                                    HepConnect
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/partnerships-and-community/hiv-age-positively.html">
+                                    HIV Age Positively
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/partnerships-and-community/lift.html">
+                                    Lift
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/partnerships-and-community/radian.html">
+                                    RADIAN
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/partnerships-and-community/transcend.html">
+                                    TRANScend
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown14Inner"
+                             aria-labelledby="navDropdown14Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../purpose/giving.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Corporate Giving
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/giving/what-we-fund.html">
+                                    What We Fund
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/giving/funding-requests.html">
+                                    Funding Requests
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/giving/zeroing-in-ending-hiv-epidemic.html">
+                                    Zeroing In: Ending the HIV Epidemic
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown15Inner"
+                             aria-labelledby="navDropdown15Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../purpose/gilead-foundation.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Gilead Foundation
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/gilead-foundation/creating-possible-fund.html">
+                                    Creating Possible Fund
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown16Inner"
+                             aria-labelledby="navDropdown16Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../purpose/sustainability.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Sustainability
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/sustainability/our-business-is-sustainable.html">
+                                    Our Business Is Sustainable
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/sustainability/performance.html">
+                                    Performance
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/sustainability/reporting.html">
+                                    Reporting
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/sustainability/un-global-compact.html">
+                                    U.N. Global Compact
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/sustainability/un-sustainable-development-goals.html">
+                                    U.N. Sustainable Development Goals
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown17Inner"
+                             aria-labelledby="navDropdown17Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../purpose/advancing-global-health.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Advancing Global Health
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/advancing-global-health/covid-19.html">
+                                    COVID-19
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/advancing-global-health/hcv-elimination.html">
+                                    HCV Elimination
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown18Inner"
+                             aria-labelledby="navDropdown18Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../purpose/medication-access.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Medication Access
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/medication-access/us-patient-access.html">
+                                    U.S. Patient Access
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/medication-access/disaster-product-replacement.html">
+                                    Disaster Product Replacement
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/medication-access/global-access.html">
+                                    Global Access
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../purpose/medication-access/authorized-distributors.html">
+                                    Authorized Distributors
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown23Inner"
+                             aria-labelledby="navDropdown23Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../about/how-we-operate.html" class="dropdown-item-inner submenu-parent" role="button">
+                                How We Operate
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/how-we-operate/esg-goals.html">
+                                    ESG Goals
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/how-we-operate/governance.html">
+                                    Governance
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/how-we-operate/transparency.html">
+                                    Transparency
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown24Inner"
+                             aria-labelledby="navDropdown24Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../about/ethics-and-code-of-conduct.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Ethics and Code of Conduct
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/policies.html">
+                                    Policies
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/anti-bribery-and-anti-corruption.html">
+                                    Anti-Bribery and Anti-Corruption Policy
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/animal-use-and-welfare-policy.html">
+                                    Animal Use and Welfare Policy
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/disclosures.html">
+                                    Disclosures
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/anti-counterfeiting.html">
+                                    Anti-Counterfeiting
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/consumer-product-safety.html">
+                                    Consumer Product Safety
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/supplier-info.html">
+                                    Supplier Information
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../about/ethics-and-code-of-conduct/political-engagement.html">
+                                    Political Engagement
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown33Inner"
+                             aria-labelledby="navDropdown33Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../science-and-medicine/research.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Research
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../science-and-medicine/research/rsp.html">
+                                    Research Scholars Program
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../science-and-medicine/research/compassionate-use.html">
+                                    Compassionate Use
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../science-and-medicine/research/investigator-sponsored-research.html">
+                                    Investigator-Sponsored Research
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown43Inner"
+                             aria-labelledby="navDropdown43Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../news-and-press/press-room.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Newsroom
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/press-room/press-releases.html">
+                                    Press Releases
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/press-room/press-faqs.html">
+                                    Media Inquiries
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown44Inner"
+                             aria-labelledby="navDropdown44Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../news-and-press/company-statements.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Company Statements
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-continues-efforts-to-halt-the-distribution-of-counterfeit-hiv-medications-and-protect-patient-safety.html">
+                                    Gilead Continues Efforts to Halt the Distribution of Counterfeit HIV Medications and Protect Patient Safety
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/veklury-remdesivir-demonstrates-continued-in-vitro-antiviral-activity-against-omicron-subvariants.html">
+                                    Veklury® (Remdesivir) Demonstrates Continued In Vitro Antiviral Activity Against Omicron Subvariants, Including BA.4 and BA.5
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/sacituzumab-govitecan-hziy-trodelvy-elevated-to-category-1-preferred-recommendation-in-second-line-metastatic-triple-negative-brea">
+                                    Sacituzumab Govitecan-Hziy Trodelvy Elevated to Category 1 Preferred Recommendation in Second-Line Metastatic Triple-Negative Breast Cancer
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-fda-acceptance-of-new-drug-application-for-investigational-lenacapavir.html">
+                                    Gilead Sciences Statement on FDA Acceptance of New Drug Application for Investigational Lenacapavir
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-statement-on-us-supreme-court-overturning-roe-v-wade.html">
+                                    Gilead Statement on U.S. Supreme Court Overturning Roe v. Wade
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/all-magrolimab-studies-reopening-for-patient-enrollment-in-the-us.html">
+                                    All Magrolimab Studies Re-Opening for Patient Enrollment in the U.S.
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-statement-on-who-recommendation-of-veklury-remdesivir-and-acceleration-of-prequalification-submission.html">
+                                    Gilead Statement on WHO Recommendation of Veklury® (Remdesivir) and Acceleration of Prequalification Submission
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-implements-contract-pharmacy-integrity-initiative-for-branded-hepatitis-c-products.html">
+                                    Gilead Implements Contract Pharmacy Integrity Initiative for Branded Hepatitis C Products
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-to-expand-footprint-in-oceanside.html">
+                                    Gilead to Expand Footprint in Oceanside
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-expands-availability-of-veklury-remdesivir-to-non-hospital-outpatient-facilities.html">
+                                    Gilead Expands Availability of Veklury® (remdesivir) to Non-Hospital Outpatient Facilities
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-global-resolution-of-bictegravir-patent-dispute-with-viiv-healthcare.html">
+                                    Gilead Announces Global Resolution of Bictegravir Patent Dispute with ViiV Healthcare
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-actions-to-remove-counterfeit-hiv-medications-from-us-supply-chain.html">
+                                    Gilead Announces Actions to Remove Counterfeit HIV Medications from US Supply Chain
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-statement-on-zydelig-us-indication-for-follicular-lymphoma-and-small-lymphocytic-leukemia.html">
+                                    Gilead Statement on Zydelig® U.S. Indication for Follicular Lymphoma and Small Lymphocytic Leukemia
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/veklury-remdesivir-receives-positive-chmp-opinion-for-the-treatment-of-adults-not-on-supplemental-oxygen-and-considered-high-risk-">
+                                    Veklury® (Remdesivir) Receives Positive CHMP Opinion for the Treatment of Adults Not on Supplemental Oxygen and Considered High Risk for COVID-19 Disease Progression
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-issues-a-voluntary-nationwide-recall-of-two-lots-of-veklury.html">
+                                    Gilead Issues a Voluntary Nationwide Recall of Two Lots of Veklury® (Remdesivir)  Due to Presence of Glass Particulates
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-statement-on-veklury-remdesivir-and-the-sars-cov-2-omicron-variant.html">
+                                    Gilead Statement on Veklury® (Remdesivir) and the SARS-CoV-2 Omicron Variant
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-and-merck-announce-temporary-pause-in-enrollment-for-phase-2-study-evaluating-an-oral-weekly-combination-regimen-of-investi">
+                                    Gilead and Merck Announce Temporary Pause in Enrollment for Phase 2 Study Evaluating an Oral Weekly Combination Regimen of Investigational Islatravir and Investigational Lenacapavir
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-decision-not-to-pursue-marketing-authorization-for-descovy-for-pre-exposure-prophylaxis-in-the-european-union.7c">
+                                    Gilead Announces Decision Not to Pursue Marketing Authorization for Descovy® for Pre-Exposure Prophylaxis in the European Union
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-statement-on-new-nccn-clinical-practice-guidelines-in-oncology-nccn-guidelines-recommendation-for-sacituzumab-govitecan-hzi">
+                                    Gilead Statement on New NCCN Clinical Practice Guidelines in Oncology (NCCN  Guidelines®) Recommendation for Sacituzumab Govitecan-Hziy (Trodelvy®) in Second-Line and Later Metastatic Triple-Negative Breast Cancer
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-requiring-vaccination-against-covid-19-for-employees.html">
+                                    Gilead Sciences Statement on Requiring Vaccination Against COVID-19 for Employees
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-warns-of-counterfeit-hiv-medication-being-distributed-in-the-united-states.html">
+                                    Gilead Warns of Counterfeit HIV Medication Being Distributed in the United States
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-positive-phase-3-ambition-study-findings-for-the-treatment-of-hiv-associated-cryptococcal-meningitis">
+                                    Gilead Sciences Statement on Positive Phase 3 AMBITION Study Findings for the Treatment of HIV-Associated Cryptococcal Meningitis
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-response-to-open-letter-regarding-access-to-ambisome-liposomal-amphotericin-b.html">
+                                    Gilead Sciences Response to Open Letter Regarding Access to AmBisome® (liposomal amphotericin B)
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-statement-on-new-england-journal-of-medicine-publication-of-positive-phase-3-ascent-study-of-trodelvy-in-metastatic-triple-">
+                                    Gilead Statement on New England Journal of Medicine Publication of Positive Phase 3 ASCENT Study of Trodelvy in Metastatic Triple-Negative Breast Cancer
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-phase-3-veklury-remdesivir-study-in-high-risk-non-hospitalized-patients-with-covid-19.html">
+                                    Gilead Sciences Statement on Phase 3 Veklury® (Remdesivir) Intravenous Study in High Risk Non-Hospitalized Patients with COVID-19
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-additional-updates-to-the--advancing--access-patient-assistance-medication-assistance-program.html">
+                                    Gilead Announces Additional Updates to The Advancing ACCESS® Patient Assistance/Medication Assistance Program
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-updates-to-the-advancing-access-patient-assistance-medication-assistance-program.html">
+                                    Gilead Announces Updates  to The Advancing  ACCESS® Patient Assistance/Medication Assistance Program
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-plans-for-new-location-in-north-carolinas-research-triangle-region-dedicated-to-business-services.html">
+                                    Gilead Announces Plans for New Location in North Carolina’s Research Triangle Region Dedicated to Business Services
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-the-passing-of-the-honorable-george-p-shultz-phd.html">
+                                    Gilead Sciences Statement on the Passing of the Honorable George P. Shultz, PhD
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-recent-events-in-washington-dc.html">
+                                    Gilead Sciences Statement on Recent Events in Washington, D.C.
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-announces-new-arm-of-hiv-womens-prevention-study.html">
+                                    Gilead Announces New Arm of HIV Women’s Prevention Study to Evaluate the Investigational  Long-Acting HIV-1 Capsid Inhibitor Lenacapavir in Addition to Descovy for PrEP®
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-updated-veklury-covid19-treatment-guidelines.html">
+                                    Gilead Sciences Statement on The World Health Organization’s Updated Veklury®  (Remdesivir) COVID-19 Treatment Guidelines
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-update-on-veklury-remdesivir-manufacturing-network.html">
+                                    
+                                </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/company-statements/gilead-sciences-statement-on-state-attorneys-general-letter-on-remdesivir.html">
+                                    
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown45Inner"
+                             aria-labelledby="navDropdown45Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../news-and-press/annual-report.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Annual Reports
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../news-and-press/annual-report/year-in-review-2021.html">
+                                    Year in Review 2021
+                                </a>
+                        </div>
+                        <div class="dropdown-menu-inner" id="navDropdown61Inner"
+                             aria-labelledby="navDropdown61Inner">
+                            <a href="#" class="dropdown-menu-return-inner" role="button">
+                                BACK TO MAIN MENU
+                            </a>
+
+
+                            <a href="../privacy-statements.html" class="dropdown-item-inner submenu-parent" role="button">
+                                Privacy Statements
+                            </a>
+                                <a class="dropdown-item-inner avoid-interstitial " href="../privacy-statements/cookie-statement.html">
+                                    Cookie Statement
+                                </a>
+                        </div>
+                    
+
+
+                    
+                    <div class="dropdown-menu-inner global-ops-content" id="globalOpsDropdown"
+                         aria-labelledby="globalOpsDropdown">
+                        <a href="#" class="dropdown-menu-return-inner" role="button">
+                            BACK TO MAIN MENU
+                        </a>
+
+                            <div class="global-op-location">
+                                <span id="continent-NorthAmerica">North America</span>
+                                <ul aria-labelledby="continent-NorthAmerica">
+                                        <li><a href="https://www.gilead.ca/">Canada</a></li>
+                                        <li><a href="../utility/global-operations/north-america/mexico.html">Mexico</a></li>
+                                        <li><a href="../about/us-locations.html">USA</a></li>
+                                </ul>
+                            </div>
+                            <div class="global-op-location">
+                                <span id="continent-SouthAmerica">South America</span>
+                                <ul aria-labelledby="continent-SouthAmerica">
+                                        <li><a href="../utility/global-operations/south-america/argentina.html">Argentina</a></li>
+                                        <li><a href="../utility/global-operations/south-america/brazil.html">Brazil</a></li>
+                                </ul>
+                            </div>
+                            <div class="global-op-location">
+                                <span id="continent-Asia">Asia</span>
+                                <ul aria-labelledby="continent-Asia">
+                                        <li><a href="https://www.gileadchina.cn/">China Mainland</a></li>
+                                        <li><a href="../utility/global-operations/asia/hong-kong.html">Hong Kong</a></li>
+                                        <li><a href="../utility/global-operations/asia/india.html">India</a></li>
+                                        <li><a href="https://www.gilead.co.jp/">Japan</a></li>
+                                        <li><a href="https://www.gilead.co.kr/">Korea</a></li>
+                                        <li><a href="../utility/global-operations/asia/singapore.html">Singapore</a></li>
+                                        <li><a href="../utility/global-operations/asia/taiwan.html">Taiwan</a></li>
+                                </ul>
+                            </div>
+                            <div class="global-op-location">
+                                <span id="continent-MiddleEast">Middle East</span>
+                                <ul aria-labelledby="continent-MiddleEast">
+                                        <li><a href="../utility/global-operations/middle-east/saudi-arabia.html">Saudi Arabia</a></li>
+                                        <li><a href="https://www.gileadisrael.co.il/">Israel</a></li>
+                                        <li><a href="../utility/global-operations/middle-east/turkey.html">Turkey</a></li>
+                                        <li><a href="../utility/global-operations/middle-east/united-arab-emirates.html">United Arab Emirates</a></li>
+                                </ul>
+                            </div>
+                            <div class="global-op-location">
+                                <span id="continent-Africa">Africa</span>
+                                <ul aria-labelledby="continent-Africa">
+                                        <li><a href="../utility/global-operations/africa/south-africa.html">South Africa</a></li>
+                                </ul>
+                            </div>
+                            <div class="global-op-location">
+                                <span id="continent-Australia">Australia</span>
+                                <ul aria-labelledby="continent-Australia">
+                                        <li><a href="https://www.gilead.com.au/">Australia and New Zealand</a></li>
+                                </ul>
+                            </div>
+                            <div class="global-op-location">
+                                <span id="continent-Europe">Europe</span>
+                                <ul aria-labelledby="continent-Europe">
+                                        <li><a href="../utility/global-operations/europe/austria.html">Austria</a></li>
+                                        <li><a href="../utility/global-operations/europe/belgium-luxembourg.html">Belgium Luxembourg</a></li>
+                                        <li><a href="../utility/global-operations/europe/czech-republic-and-slovakia.html">Czech Republic &amp; Slovakia</a></li>
+                                        <li><a href="../utility/global-operations/europe/denmark.html">Denmark</a></li>
+                                        <li><a href="../utility/global-operations/europe/finland.html">Finland</a></li>
+                                        <li><a href="https://www.gilead.fr/">France</a></li>
+                                        <li><a href="https://www.gileadsciences.de/">Germany</a></li>
+                                        <li><a href="../utility/global-operations/europe/greece.html">Greece</a></li>
+                                        <li><a href="../utility/global-operations/europe/iceland.html">Iceland</a></li>
+                                        <li><a href="../utility/global-operations/europe/ireland.html">Ireland</a></li>
+                                        <li><a href="https://www.gilead.it/">Italy</a></li>
+                                        <li><a href="../utility/global-operations/europe/netherlands.html">Netherlands</a></li>
+                                        <li><a href="../utility/global-operations/europe/norway.html">Norway</a></li>
+                                        <li><a href="../utility/global-operations/europe/poland.html">Poland &amp; The Baltics</a></li>
+                                        <li><a href="../utility/global-operations/europe/portugal.html">Portugal</a></li>
+                                        <li><a href="../utility/global-operations/europe/russia.html">Russia</a></li>
+                                        <li><a href="https://www.gilead.es/">Spain</a></li>
+                                        <li><a href="../utility/global-operations/europe/sweden.html">Sweden</a></li>
+                                        <li><a href="../utility/global-operations/europe/switzerland.html">Switzerland</a></li>
+                                        <li><a href="https://www.gilead.co.uk/">United Kingdom</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    
+
+                    
+                    <div class="dropdown-menu-inner global-ops-content" id="contactDropdown"
+                         aria-labelledby="contactDropdown">
+                        <a href="#" class="dropdown-menu-return-inner" role="button">
+                            BACK TO MAIN MENU
+                        </a>
+
+                        <div class="global-op-location">
+
+                            <h2><a href="../utility/contact.html">Contact </a> </h2>
+                            <ul>
+                                    <li><a href="https://www.askgileadmedical.com/">Request Medicines Information</a></li>
+                                    <li><a href="../utility/contact/report-an-adverse-event.html">Report an Adverse Event</a></li>
+                                    <li><a href="../utility/contact/partnership-request.html">Partnership Request</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    
+<form action="https://www.gilead.com/careers/careers-at-gilead" class="form-inline form-search my-2 my-lg-0 d-none d-lg-flex justify-content-end" method="post" role="search"><input name="__RequestVerificationToken" type="hidden" value="F6cHdlWD0l7BwHmViA4AXT15SGo7OZsLUY9OZDeiwsq9Suar5i6PUBsm0AVsD1P1768_sVyjtprnYxofdIyuVkhpeDjCRDMr3hns7D-cL2k1" /><input id="scController" name="scController" type="hidden" value="Search" /><input id="scAction" name="scAction" type="hidden" value="SubmitSearch" />                        <div class="input-group w-100">
+                            <label for="searchTerm" id="searchTermLabel" class="d-none">Search Term</label>
+                            <input class="form-control py-2 border-right-0 border"
+                                   type="search"
+                                   name="searchTerm" aria-labelledby="searchTermLabel"
+                                   value="">
+                            <div class="input-group-append">
+                                <div class="input-group-text bg-white">
+                                    <button aria-label="search" class="magnifying-glass"></button>
+                                </div>
+                            </div>
+                        </div>
+</form>                    
+
+                    
+                    <div class="master-head d-block d-lg-none">
+                        <ul class="navbar-nav p-0">
+                                    <li class="nav-item">
+                                        <a target="_blank" class="nav-link " href="https://www.askgileadmedical.com/">Medicine Questions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a target="" class="nav-link " href="../utility/contact/report-an-adverse-event.html">Report an Adverse Event</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a target="_blank" class="nav-link " href="https://investors.gilead.com/">Investors</a>
+                                    </li>
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link nav-dropdown-toggle-inner trigger-globalOps"
+                                       role="button" data-toggle="dropdownInner" aria-haspopup="true"
+                                       data-target="contactDropdown" aria-expanded="false">
+                                        Contact
+                                        <i class="chevron m-auto"></i>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item last">
+                                    <a href="#" class="nav-link nav-dropdown-toggle-inner trigger-globalOps"
+                                       role="button" data-toggle="dropdownInner" aria-haspopup="true"
+                                       data-target="globalOpsDropdown" aria-expanded="false">
+                                        Global Operations
+                                        <i class="chevron m-auto"></i>
+                                    </a>
+                                </li>
+
+                        </ul>
+
+
+                        
+                        <div class="dropdown-menu show" aria-labelledby="navDropdown0Inner">
+                            <a href="#" class="nav-dropdown-toggle-inner" id="navDropdown0Inner"
+                               role="button" data-toggle="dropdownInner" aria-haspopup="true"
+                               aria-expanded="false">
+                                Toggle Inner Dropdown
+                            </a>
+                            <div class="dropdown-menu-inner" aria-labelledby="navDropdown0Inner">
+                                <span class="dropdown-menu-return-inner" role="button">
+                                    BACK TO MAIN MENU
+                                </span>
+                                <a class="dropdown-item-inner" href="#"
+                                   target="_blank">
+                                    Google.com
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </section>
+            </nav>
+        </div>
+    </div>
+
+
+    </header>
+    
+
+    <div class="gilead-wrapper" data-action="scrollTo">
+        
+        
+    <main class="container-fluid internal-page">
+        <div class="row">
+            <aside class="d-none d-md-block col-3 side-bar" data-action="asideComponent">
+                
+                
+
+<ul role="menu" aria-label="Side navigation">
+        <li class="">
+           
+                <a id="side-nav-fl-careers-at-gilead-link" href="careers-at-gilead.html" class="avoid-interstitial  active" role="menuitem">
+                    Careers at Gilead
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-our-culture-link" href="our-culture.html" class="avoid-interstitial  " role="menuitem">
+                    Our Culture
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-meet-our-employees-link" href="meet-our-employees.html" class="avoid-interstitial  " role="menuitem">
+                    Meet Our Employees
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-inclusion-and-diversity-in-hiring-link" href="inclusion-and-diversity-in-hiring.html" class="avoid-interstitial  " role="menuitem">
+                    Inclusion and Diversity in Hiring
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-compensation-benefits-and-wellbeing-link" href="compensation-benefits-and-wellbeing.html" class="avoid-interstitial  " role="menuitem">
+                    Compensation, Benefits and Wellbeing
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-our-global-footprint-link" href="our-global-footprint.html" class="avoid-interstitial  " role="menuitem">
+                    Our Global Footprint
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-early-career-opportunities-link" href="early-career-opportunities.html" class="avoid-interstitial  " role="menuitem">
+                    Early Career Opportunities
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-postdoctoral-fellowships-link" href="postdoctoral-fellowships.html" class="avoid-interstitial  " role="menuitem">
+                    Postdoctoral Fellowships
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-hiring-events-link" href="https://gilead.yello.co/external/events_central" class="avoid-interstitial external-link " role="menuitem">
+                    Hiring Events
+                </a>
+        </li>
+        <li class="">
+           
+                <a id="side-nav-fl-talent-community-signup-link" href="https://gilead.yello.co/external/form/24a8oU4jF5UL3CKq7lO_Cg" class="avoid-interstitial external-link " role="menuitem">
+                    Talent Community Sign-up
+                </a>
+        </li>
+</ul>
+                
+            </aside>
+
+            <section class="col-sm-12 col-md-9" aria-label="main content">
+                
+                
+
+    <div  class="">
+        <h1>
+            Careers at Gilead
+        </h1>
+    </div>
+
+
+    <section class="careersHero">
+            <div class="careersHero-img">
+                <picture>
+                    <source srcset="/-/media/gilead-corporate/images/careers/at-gilead/diagonal-hero-desktop2x.jpg" media="(max-width: 768px)">
+                    <img srcset="/-/media/gilead-corporate/images/careers/at-gilead/diagonal-hero-desktop2x.jpg" alt="Gilead employees" class="w-100"
+                         src="../-/media/gilead-corporate/images/careers/at-gilead/Diagonal%20hero%20Desktop2x.jpg">
+                </picture>
+            </div>
+        <div class="careersHero-info">
+
+            <div class="careersHero-text">
+                <h2>Search Open Positions</h2>
+                <p>Be part of Gilead’s journey as we strive to solve some of the world’s biggest healthcare challenges.</p>
+            </div>
+            <div class="careersHero-ctas">
+                <a href="https://gilead.yello.co/job_boards/v42vD4vKxb3AkKvV93YsrQ" class="cta_one button button--red button--arrow" rel="noopener noreferrer" target="_blank" >Search Jobs</a>
+                <a href="https://gild.insitecareers.com/" class="cta_two" rel="noopener noreferrer" target="_blank" >Search for Contract Roles</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div  class="richtext-container mt-6">
+        <h3 class="mb-3">Working at Gilead</h3>
+<p>Gilead has pursued and achieved breakthroughs in medicine for more than three decades, with the goal of creating a better, healthier world for all people. We have commercialized more than 25 innovative medicines, helping to transform treatment for people living with HIV, viral hepatitis, cancer and other life-threatening diseases. Through our ongoing bold and transformative science, we&rsquo;re driving innovations that have the potential to become the next generation of life-changing medicines.</p>
+<p>Our employees include some of the most talented innovators in the biopharmaceutical industry. We are always looking for the next wave of passionate people interested in joining an intellectually stimulating, socially responsible company with a track record of addressing serious illnesses and public health issues around the world. Every member of our team plays a critical and visible role in helping to discover, develop and deliver innovative therapeutics for people with life-threatening diseases. Because the impossible is not impossible. It&rsquo;s what&rsquo;s next.</p>
+<a name="video"></a>
+<h2 class="mt-5">A Look Inside the Innovation</h2>
+    </div>
+ 
+
+
+    <div  class="video-player-container video-player-container-home">
+        <div class="video-player">
+            
+                    <video class="video-container" controls="true" preload="metadata" poster ="../-/media/gilead-corporate/images/careers/KenMonicaVideoThumbnail1920x1080.jpg">
+                        <source src="https://cwsgblprod-cdne.azureedge.net/Gilead_Careers_Ken_Monica_v12_Subtitles.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+        </div>
+            <div class="description">
+                <p>Have you ever been curious about what goes into making innovative new medicines? In the latest episode of our &ldquo;Inside the Innovation&rdquo; series, learn about Gilead&rsquo;s patient-first approach to pharmaceutical manufacturing from Monica Tijerina, Vice President, External Manufacturing, Clinical Supply Chain and Logistics, and Ken Kent, Senior Vice President of Chemical Development and Manufacturing. Listen in as Monica and Ken discuss what motivates them, share career highlights, and reflect on the critical role of inclusion and diversity in their work.</p>
+            </div>
+        
+            <div class="transcript-container ">
+                <span data-action="videoPlayer" data-text-swap="View Transcript"
+                          data-text-original="View Transcript" class="transcript-label">View Transcript</span>
+                <div class="content">
+                    CREW:<br />
+Okay, B camera. Here we go. Set and action.<br />
+<br />
+KEN:<br />
+Hey Monica.<br />
+<br />
+MONICA:<br />
+Hey Ken.<br />
+<br />
+KEN:<br />
+Good to see you.&nbsp;<br />
+<br />
+MONICA:<br />
+Good to see you! How should we start?<br />
+<br />
+KEN:<br />
+Hi, my name&rsquo;s Ken Kent, and I'm the Senior Vice President of Chemical Development and Manufacturing here at Gilead Sciences.<br />
+<br />
+MONICA:<br />
+Hi, my name is Monica Tijerina. I'm in Global Supply Chain and External Manufacturing within Pharmaceutical Development and Manufacturing.&nbsp;<br />
+<br />
+Our industry uses many acronyms. So PDM, what does PDM stand for within Gilead and what does PDM do?<br />
+<br />
+KEN:<br />
+Yeah, that's a good question. You know, PDM stands for Pharmaceutical Development and Manufacturing. So pharmaceutical development is really: How do you make it? How do you test it? How do you administer it? So, when a compound first comes out of research, whether a small molecule or biologic, it's really an idea. And that will have to be tested&mdash;is it safe and effective in people? There's so much to figure out and really, we want it to be the optimal patient experience really, so what would be best for patients and how do we deliver that?&nbsp;<br />
+<br />
+You know, the sort of, team dynamics are really integral to what we do. Can you give me a sense of how your team operates, and who do you work with and for?<br />
+<br />
+MONICA:<br />
+In discovery, it's really important that we're there with the scientists that are identifying targets to treat HIV or treat a type of cancer. And so, you would have direct interaction with many individuals within research. And then as you start to progress into developing commercial, it opens up who you're working with as far as understanding what the patient needs are, making sure you develop the best medicine possible for them.&nbsp;<br />
+<br />
+Many people go to the pharmaceutical industry because they have a personal connection. Do you have a personal connection? What drove you to join Gilead?<br />
+<br />
+KEN:<br />
+Well, you know, when I first interviewed at Gilead, I thought it was really exciting the passion that the founder had for the company and the belief that we were going to make a difference and have impact on patients&rsquo; lives. And right off the bat in the late 80s, we started working on HIV treatments and in the Bay Area, HIV was just a devastating disease. And in fact, I had two brother-in-laws that both passed from HIV. I remember I was at one of our manufacturing sites and we were really pushing to get these compounds to the patients, and I was telling this supplier, I&rsquo;m going to ask really unreasonable things of you for a very reasonable cause, because this could be your mother, your father, your brother, your sister.<br />
+<br />
+MONICA:<br />
+Definitely, I can understand what you're saying.<br />
+<br />
+KEN:<br />
+Monica, you know, there's a lot going on at Gilead&mdash;that's an understatement. How do you keep your energy up? How do you maintain that same easy demeanor and get-it-done attitude?<br />
+<br />
+MONICA:<br />
+If you love science, or you have somebody who&rsquo;s been impacted by a disease, this is a career that you can choose, and it&rsquo;s very rewarding, it gives back more than I put in. So, I think for me, I really feel very passionate around STEM education for American students, and we don't produce enough American students that pursue a career in STEM, and so with me, I've been very fortunate to get an opportunity to lead Gileados, that's an employee resource group for Latinos. And so, we spend time to support the Latino community and support STEM education.&nbsp;<br />
+<br />
+So, Ken, you've been with Gilead a very long time. And I want to ask you in your 33 years at Gilead, what is your most memorable project that you've worked on?<br />
+<br />
+KEN:<br />
+Boy, my most memorable project in 33 years at Gilead? That's a good question. I think when we got our first approval for a COVID-19 treatment. To get that done as quickly as the team did, under such unusual circumstances, was just phenomenal. I couldn't be prouder of them.&nbsp;<br />
+<br />
+Monica, so you know, Gilead&rsquo;s talked a lot about not only what we do but focusing on how we do it and part of that is really trying to grow through diversity , diversity of thought, and inclusion of all voices. Can you tell a little bit of how that positively impacts our ability to develop new medicines?&nbsp;<br />
+<br />
+MONICA:<br />
+So, there's been a lot of research that shows when you have individuals who think differently, and you have people who will listen to those unique ideas, that you get to a better outcome. And so, development of medicines are no different. Just a diverse set of individuals from years of industry, gender, training, you know, education, all of those give you different perspectives. Without that diverse group, you will naturally just have blind spots, and so listening to those individuals always helps to get to a better outcome.<br />
+<br />
+KEN:<br />
+Monica, it's been a lot of fun. Thank you so much for spending time with me.<br />
+<br />
+MONICA:<br />
+Thank you, Ken, I really enjoyed our time here together and just thank you for sitting with me today and sharing your stories. Always a pleasure.&nbsp;<br />
+<br />
+KEN:<br />
+Alright, see you soon. Bye.<br />
+<br />
+MONICA:<br />
+Bye.
+                </div>
+            </div>
+    </div>
+
+
+
+    <div  class="richtext-container ">
+        <p>&nbsp;</p>
+    </div>
+ 
+
+<div  class="container-100 ">
+    <div class="row">
+        <div class="col">
+            
+
+    <section class="job_posting">
+        <h2>Related Jobs</h2>
+            <div class="job_posting-oportunities">
+                    <div class="job_posting-item">
+                        <div class="title">
+                            <a href="https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/Ireland---Cork/Director--Demand-Planning_R0031913-3" target="_blank">Director, Demand Planning (R0031913)</a>
+                        </div>
+                        <div class="location">
+                                <p>Ireland - Cork</p>
+                        </div>
+                    </div>
+                    <div class="job_posting-item">
+                        <div class="title">
+                            <a href="https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Associate-Director--External-Manufacturing_R0032115-1" target="_blank">Associate Director, External Manufacturing (R0032115)</a>
+                        </div>
+                        <div class="location">
+                                <p>United States - California - Foster City</p>
+                        </div>
+                    </div>
+                    <div class="job_posting-item">
+                        <div class="title">
+                            <a href="https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States--Remote/Director--Outsourced-Manufacturing_R0032116-1" target="_blank">Director, Outsourced Manufacturing (R0032116)</a>
+                        </div>
+                        <div class="location">
+                                <p>United States – Remote</p>
+                        </div>
+                    </div>
+                    <div class="job_posting-item">
+                        <div class="title">
+                            <a href="https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---La-Verne/Sr-Supply-Chain-Specialist_R0032117" target="_blank">Sr. Supply Chain Specialist (R0032117)</a>
+                        </div>
+                        <div class="location">
+                                <p>United States - California - La Verne</p>
+                        </div>
+                    </div>
+                    <div class="job_posting-item">
+                        <div class="title">
+                            <a href="https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/Canada---Alberta---Edmonton/Millwright--Senior-Maintenance-Technician_R0032057-1" target="_blank">Millwright, Senior Maintenance Technician (R0032057)</a>
+                        </div>
+                        <div class="location">
+                                <p>Canada - Alberta - Edmonton</p>
+                        </div>
+                    </div>
+                            </div>
+    </section>
+
+        </div>
+    </div>
+</div>
+
+
+    <div  class="richtext-container mt-5">
+        <h3>Learn More About Who We Are</h3>
+    </div>
+ 
+
+<div   class="container-333 full-width-mobile-gray">
+    <div class="row">
+        <div class="col-md">
+            
+
+    <div >
+        <img src="../-/media/gilead-corporate/images/careers/at-gilead/meetouremployees3x9188.png?h=272&amp;w=312&amp;la=en&amp;hash=0B729E586268EE82B7614D0306B42DB3" class="mx-auto d-block image no-gutter-mobile" width="312" height="272" alt="Gilead employees working" />
+    </div>
+
+
+
+    <div  class="richtext-container mb-0">
+        <div class="p-3 full-width-text-mobile">
+<a href="meet-our-employees.html" class="link-hover-red"><strong><span style="text-decoration: underline;">Meet Our Employees</span></strong></a>
+<p class="mt-2">Get to know the talented people who are helping Gilead create a better, healthier world for all people. </p>
+</div>
+    </div>
+ 
+        </div>
+        <div class="col-md">
+            
+
+    <div >
+        <img src="../-/media/gilead-corporate/images/careers/at-gilead/ourcommittment3xbd48.png?h=266&amp;w=306&amp;la=en&amp;hash=B917D40BC59F6C505C17A7B11942C205" class="mx-auto d-block image no-gutter-mobile" width="306" height="266" alt="Two Gilead employees speaking" />
+    </div>
+
+
+
+    <div  class="richtext-container mb-0">
+        <div class="p-3 full-width-text-mobile">
+<a href="inclusion-and-diversity-in-hiring.html" class="link-hover-red"><strong><span style="text-decoration: underline;">Our Commitment to Inclusion and Diversity</span></strong></a>
+<p class="mt-2">We’re growing a diverse workforce to help drive innovation at Gilead. </p>
+</div>
+    </div>
+ 
+        </div>
+        <div class="col-md">
+            
+
+    <div >
+        <img src="../-/media/gilead-corporate/images/careers/at-gilead/advancingglobalhealth3x2642.png?h=266&amp;w=316&amp;la=en&amp;hash=808FC0A807BDF16E0F326854EC583996" class="mx-auto d-block image no-gutter-mobile" width="316" height="266" alt="A scientist in the lab " />
+    </div>
+
+
+
+    <div  class="richtext-container mb-0">
+        <div class="p-3  full-width-text-mobile">
+<a href="../purpose/advancing-global-health.html" class="link-red-hover"><strong><span style="text-decoration: underline;">Advancing Global Health</span></strong></a>
+<p class="mt-2">We’re collaborating with our partners to improve access to care around the world.</p>
+</div>
+    </div>
+ 
+        </div>
+    </div>
+</div>
+
+<div  class="container-100 ">
+    <div class="row">
+        <div class="col">
+            
+
+
+    <div  class="richtext-container ">
+        <div class="mt-5">
+<h3>Equal Opportunities </h3>
+<p>As an equal opportunity employer, Gilead Sciences, Inc. is committed to a diverse workforce. Employment decisions regarding recruitment and selection will be made without discrimination based on race, color, religion, national origin, gender, age, sexual orientation, physical or mental disability, genetic information or characteristic, gender identity and expression, veteran status, or other non-job-related characteristics or other prohibited grounds specified in applicable federal, state and local laws. It is also Gilead&rsquo;s policy to comply with all applicable federal, state and local laws respecting consideration of unemployment status in making hiring decisions. For more information about equal employment opportunity protections, please view the <a rel="noopener noreferrer" rel="noopener noreferrer" href="https://www.eeoc.gov/employers/eeo-law-poster" target="_blank">EEO is the Law</a> poster.</p>
+</div>
+<div>
+<p><a rel="noopener noreferrer" rel="noopener noreferrer" href="https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/eppac.pdf" target="_blank" class="arrow-link">Notice: Employee Polygraph Protection Act</a></p>
+<p><a rel="noopener noreferrer" rel="noopener noreferrer" href="https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf" target="_blank" class="arrow-link">Your Rights Under the Family and Medical Leave Act</a></p>
+<p><a rel="noopener noreferrer" rel="noopener noreferrer" href="https://www.dol.gov/sites/dolgov/files/OFCCP/pdf/pay-transp_ English_formattedESQA508c.pdf" target="_blank" class="arrow-link">Pay Transparency Nondiscrimination Provision</a></p>
+<p><span style="font-size: 1.125rem; font-family: var(--font-family-ProximaNova);">To ensure reasonable accommodations are provided to individuals protected by Section 503 of the Rehabilitation Act of 1973, the Vietnam Era Veterans' Readjustment Act of 1974, and Title I of the Americans with Disabilities Act of 1990, applicants who require accommodation in the job application process may contact </span><a href="mailto:careers@gilead.com" style="font-family: var(--font-family-ProximaNova); font-size: 1.125rem; background-color: #ffffff;">careers@gilead.com</a><span style="font-size: 1.125rem; font-family: var(--font-family-ProximaNova);"> for assistance.<br />
+</span></p>
+</div>
+<div class="mt-5">
+<h3>A Message from Gilead&rsquo;s Talent Acquisition Team</h3>
+<p>We encourage all qualified individuals who are passionate about our mission and want to help make a difference through our work to apply online. Candidates who are selected for further consideration will be contacted by a member of the company&rsquo;s internal recruiting team.  </p>
+</div>
+<div class="mt-5">
+<h3>COVID-19 Updates</h3>
+<p>Following extensive monitoring, research, consideration of business implications, and advice from internal and external experts, Gilead has made the decision to require all U.S., Canada, Australia, Singapore and Hong Kong employees and contractors to be fully vaccinated against COVID-19 as a condition of employment. The health of our employees, contractors, their loved ones, our partners and the communities and people we serve is a top priority. Vaccination is the most effective way currently available to deliver on that priority.</p>
+<p>The purpose of the vaccination requirement is to minimize the spread of COVID-19 in the workplace and support the health and safety of our communities. A person is considered fully vaccinated two weeks after the second dose of a two-dose vaccine or two weeks after a single-dose vaccine has been administered. If booster shots are required or recommended by local government or authority (with requirements varying potentially based on the vaccine), "fully vaccinated" should be interpreted to mean fully compliant with any such recommendations within a reasonable amount of time based on the accessibility and availability of the booster shots. Anyone unable to be vaccinated, either because of a sincerely held religious belief, medical condition or disability that prevents them from being vaccinated, can request an accommodation.</p>
+</div>
+    </div>
+ 
+        </div>
+    </div>
+</div>
+
+
+    <div  class="richtext-container mb-6">
+        
+    </div>
+ 
+                
+            </section>
+        </div>
+    </main>
+
+        
+        <div>
+            
+    
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-3 logo-box">
+                    <div class="logo-container">
+
+                        
+<img src="../-/media/gilead-corporate/images/global/gilead-logo-footer089e.svg?la=en&amp;hash=648D49054456F9B8F78E815670F903D0" alt="Gilead Sciences, Inc business logo" />                                                    <p>© 1996-2022  <a href="https://www.myknot.club/">MyKnot</a>. All rights reserved.</p>
+
+                    </div>
+                </div>
+
+                
+                    <div class="col-12 col-md-2 links-block">
+                            <p class="title" id="footer-first-column-desc">AREAS OF INTEREST</p>
+
+                            <ul aria-labelledby="footer-first-column-desc">
+                                    <li><a href="../purpose/partnerships-and-community.html" >Partnerships and Community</a></li>
+                                    <li><a href="../science-and-medicine/pipeline.html" >Pipeline</a></li>
+                                    <li><a href="../science-and-medicine/medicines.html" >Medicines</a></li>
+                                    <li><a href="careers-at-gilead.html" >Job Search</a></li>
+                                    <li></li>
+                            </ul>
+                    </div>
+                                    <div class="col-12 col-md-2 links-block">
+
+                            <p class="title" id="footer-second-column-desc">INFORMATION</p>
+
+                            <ul aria-labelledby="footer-second-column-desc">
+                                    <li><a href="../utility/contact.html" >Contact Us</a></li>
+                                    <li><a href="../utility/contact/report-an-adverse-event.html" >Report an Adverse Event</a></li>
+                                    <li><a href="../news-and-press/press-room.html" >Press Room</a></li>
+                                    <li><a href="http://investors.gilead.com/" target="_blank" rel="noopener noreferrer" >Investor Calls</a></li>
+                                    <li><a href="../sitemap.html" >Sitemap</a></li>
+                            </ul>
+                    </div>
+                                    <div class="col-12 col-md-2 links-block">
+                            <p id="footer-third-column-desc" class="title">LEGAL</p>
+                                                    <ul aria-labelledby="footer-third-column-desc">
+                                    <li><a href="../privacy-statements.html" >Privacy Statement</a></li>
+                                    <li><a href="../terms-of-use.html" >Terms of Use</a></li>
+                                    <li><a href="../eu-data-disclosure.html" >EU Data Disclosure</a></li>
+                                    <li><a href="../social-media-guidelines.html" >Social Media Guidelines</a></li>
+                                    <li><a href="../-/media/files/pdfs/other/Modern%20Slavery%20Statement.pdf" target="_blank" rel="noopener noreferrer" >Modern Slavery Act Statement</a></li>
+                            </ul>
+                    </div>
+                
+               
+
+<div class="col-12 col-md-3 social-block">
+
+        <p class="title" id="social-follow-desc">FOLLOW US</p>
+
+        <ul aria-labelledby="social-follow-desc">
+            <li>
+                    <a id="social-twitter-link" href="https://twitter.com/GileadSciences" target="_blank" role="link">
+                        <img src="../-/media/gilead-corporate/images/social/twitter2d43.png?h=100&amp;w=100&amp;la=en&amp;hash=FCAE078B2313CA7FC5757F9EB1945F48" alt="twitter" />
+                    </a>
+            </li>
+            <li>
+                    <a id="social-linkedin-link" href="https://www.linkedin.com/company/gilead-sciences/" target="_blank" role="link">
+                        <img src="../-/media/gilead-corporate/images/social/linkedin9d0e.png?h=100&amp;w=100&amp;la=en&amp;hash=014F22CDC4934ECFD6D53ADAAE1703E0" alt="linkedin" />
+                    </a>
+            </li>
+            <li>
+                    <a id="social-instagram-link" href="https://www.instagram.com/gileadsciences/" target="_blank" role="link">
+                        <img src="../-/media/gilead-corporate/images/social/Instagram05f0.png?h=100&amp;w=100&amp;la=en&amp;hash=D6734DF0E9EF5CBD19963811DC0BA5D1" alt="Instagram" />
+                    </a>
+            </li>
+            <li>
+                    <a id="social-facebook-link" href="https://www.facebook.com/GileadSciences" target="_blank" role="link">
+                        <img src="../-/media/gilead-corporate/images/social/facebooke44d.png?h=100&amp;w=100&amp;la=en&amp;hash=AE83FD4B725C3E8EBB3A185171F4B883" alt="facebook" />
+                    </a>
+            </li>
+            <li>
+                    <a id="social-youtube-link" href="https://www.youtube.com/channel/UCNSt7PtsfNGbezR9hmvRI1w" target="_blank" role="link">
+                        <img src="../-/media/gilead-corporate/images/social/youtubee363.png?h=100&amp;w=100&amp;la=en&amp;hash=87044B748FE8E1F2B2957AE2475737B2" alt="youtube" />
+                    </a>
+            </li>
+        </ul>
+</div>
+
+                
+            </div>
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+    </div>
+
+    <div class="misc_container">
+        
+    
+
+
+    <div class="modal fade " id=external tabindex="-1" role="dialog" aria-labelledby="desc-0f18f75c86494193a37ba561ce590bd1" aria-hidden="true" data-action="modalComponent">
+        <div class="modal-dialog" role="document">
+            <input type="hidden" id="interstial-whitelist" value="">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                        <h2 id="desc-0f18f75c86494193a37ba561ce590bd1">Headline</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+Close                        <span aria-hidden="true" class="closeButton">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+<p>Intersititial body copy</p>                </div>
+                <div class="modal-footer">
+                        <a href="#" class="button red first follow" target="_blank">Ok</a>
+                                            <a class="button blue cancel">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" tabindex="-1" role="dialog" id="longTermModal" data-action="longTermModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    Close
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+
+                <h3>Welcome</h3>
+                <p>Some content on this site is not intended for people outside the United States.</p>
+                <br>
+                <a href="#" class="button red accept-btn" data-dismiss="modal">Accept</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+    
+    <!-- Javascript -->
+    <script src="../../code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../../cdn.polyfill.io/v2/polyfill.min7b14.js?features=Array.prototype.includes,fetch,Promise,default"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="../../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+
+    
+    <script src="../Areas/GileadCorporate/Content/dist/core.min144f.js?v=20221006014302"></script>
+    
+    <script>
+        $(document).ready(function () {
+            if ($('#countryDisclaimerModal').length) {
+                setTimeout(() => {
+                    $('#countryDisclaimerModal').modal({
+                        backdrop: 'static',
+                        keyboard: false
+                    })
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+
+<!-- Mirrored from www.gilead.com/careers/careers-at-gilead by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Oct 2022 19:28:46 GMT -->
+</html>
